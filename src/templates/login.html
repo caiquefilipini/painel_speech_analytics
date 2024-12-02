@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Faça o seu login</h2>
+
+            <!-- Mensagem de erro -->
+            <div class="error-message" id="error-message">
+                <!-- O conteúdo será preenchido dinamicamente com JavaScript ou back-end -->
+            </div>
+
+            <form action="/login" method="POST">
+                <label for="email">Seu e-mail*</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="password">Sua senha*</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                <div class="options">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Lembrar-me</label>
+                </div>
+
+                <button type="submit">ENTRAR</button>
+            </form>
+
+            <!-- Link para cadastro -->
+            <p class="register-link">
+                Não tem uma conta? <a href="/register">Cadastre-se</a>
+            </p>
+
+            <p class="forgot-password">Esqueceu sua senha? <a href="/forgot-password">Clique aqui!</a></p>
+        </div>
+        <!-- Rodapé -->
+        <footer>
+            <p class="footer-text">
+                Criado por <a href="https://www.linkedin.com/in/cfilipini/" target="_blank">Caíque Filipini</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
